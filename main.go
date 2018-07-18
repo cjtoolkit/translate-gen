@@ -10,6 +10,12 @@ import (
 	"github.com/cjtoolkit/translate-gen/template"
 )
 
+func checkErr(err error) {
+	if err != nil {
+		panic(err)
+	}
+}
+
 func main() {
 	if len(os.Args) <= 2 {
 		return
@@ -21,15 +27,11 @@ func main() {
 
 	for _, fileName := range os.Args[2:] {
 		file, err := os.Open(fileName)
-		if err != nil {
-			panic(err)
-		}
+		checkErr(err)
 
 		fileBase := structure.FileBase{}
 		_, err = toml.DecodeReader(file, &fileBase)
-		if err != nil {
-			panic(err)
-		}
+		checkErr(err)
 
 		bases = append(bases, template.Context{
 			Package:  packageName,
@@ -45,18 +47,12 @@ func main() {
 		name := strings.Join(splitName[:len(splitName)-1], ".") + ".go"
 
 		file, err := os.Create(name)
-		if err != nil {
-			panic(err)
-		}
+		checkErr(err)
 
 		err = aTemplate.Execute(file, base)
-		if err != nil {
-			panic(err)
-		}
+		checkErr(err)
 
 		err = exec.Command("go", "fmt", name).Run()
-		if err != nil {
-			panic(err)
-		}
+		checkErr(err)
 	}
 }
