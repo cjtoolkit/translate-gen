@@ -1,7 +1,7 @@
 # Translate Gen
 
 A working prototype translation system that relies purely on constant variable,
-package namespace and go generate.
+package namespace, maps and go generate.
 
 A simple translation system that nicely suitable for practically embedded systems such as
 docker (IMO) and [webassembly](https://webassembly.org/).
