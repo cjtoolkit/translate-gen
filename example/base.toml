@@ -1,0 +1,11 @@
+[base]
+language = "English"
+createMap = true
+
+[[base.values]]
+const = "Hello"
+value = "Hello World"
+
+[[base.values]]
+const = "Name"
+value = "My name is %s"

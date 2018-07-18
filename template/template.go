@@ -44,8 +44,8 @@ const (
 
 {{ if .CreateMap }}
 // {{ .Language }} Map
-func BaseMap() map[string]string {
-	return map[string]string{
+func BaseMap() map[interface{}]string {
+	return map[interface{}]string{
 		{{ range .Values }}{{ .Const }}: {{ .Const }},
 		{{ end }}
 	}
@@ -55,8 +55,8 @@ func BaseMap() map[string]string {
 
 {{ with .Translation }}
 // {{ .Language }}
-func {{ .FunctionName }}() map[string]string {
-	return map[string]string{
+func {{ .FunctionName }}() map[interface{}]string {
+	return map[interface{}]string{
 		{{ range .Values }}{{ .Const }}: {{ .Value|clean }},
 		{{ end }}
 	}

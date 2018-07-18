@@ -1,0 +1,19 @@
+[[imports]]
+path = "net/http"
+alias = "httpStuff"
+
+[translation]
+language = "French"
+functionName = "French"
+
+[[translation.values]]
+const = "Hello"
+value = "Bonjour le monde"
+
+[[translation.values]]
+const = "Name"
+value = "Mon nom est %s"
+
+[[translation.values]]
+const = "httpStuff.StatusNotFound"
+value = "Pas trouvé"
