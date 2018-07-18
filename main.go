@@ -54,6 +54,9 @@ func main() {
 			panic(err)
 		}
 
-		exec.Command("go", "fmt", name).Run()
+		err = exec.Command("go", "fmt", name).Run()
+		if err != nil {
+			panic(err)
+		}
 	}
 }
