@@ -51,6 +51,7 @@ func main() {
 
 		err = aTemplate.Execute(file, base)
 		checkErr(err)
+		file.Close()
 
 		err = exec.Command("go", "fmt", name).Run()
 		checkErr(err)
