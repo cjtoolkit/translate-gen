@@ -108,6 +108,6 @@ It's basically generate go code from toml.
 
 # Note
 
-It's will remove backtick ' ` ' in values field.
+It's will remove backtick ( ` ) with a single quote ( ' ).
 
 There is no field validation, I omitted that for flexibility. Just be extra careful.

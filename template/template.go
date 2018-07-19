@@ -17,7 +17,7 @@ func BuildTemplate() *template.Template {
 	m := template.FuncMap{}
 
 	m["clean"] = func(value string) string {
-		return "`" + strings.Replace(value, "`", "", -1) + "`"
+		return "`" + strings.Replace(value, "`", "'", -1) + "`"
 	}
 
 	return template.Must(template.New("BaseTemplate").Funcs(m).Parse(baseTemplate))
