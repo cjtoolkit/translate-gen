@@ -6,6 +6,12 @@ package namespace, maps and go generate.
 A simple translation system that nicely suitable for practically embedded systems such as
 docker (IMO) and [webassembly](https://webassembly.org/).
 
+## Installation
+
+```sh
+$ go get -u github.com/cjtoolkit/translate-gen
+```
+
 ## Example
 
 ### Input
