@@ -1,4 +1,4 @@
-[[imports]]
+[[import]]
 path = "net/http"
 alias = "httpStuff"
 

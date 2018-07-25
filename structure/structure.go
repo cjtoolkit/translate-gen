@@ -1,7 +1,7 @@
 package structure
 
 type FileBase struct {
-	Imports     []Import     `toml:"imports"`
+	Imports     []Import     `toml:"import"`
 	Base        *Base        `toml:"base"`
 	Translation *Translation `toml:"translation"`
 }

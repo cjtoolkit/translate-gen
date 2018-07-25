@@ -33,7 +33,7 @@ value = "My name is %s"
 
 french.toml
 ```toml
-[[imports]] # Optional
+[[import]] # Optional
 path = "net/http"
 alias = "httpStuff" # Optional
 
