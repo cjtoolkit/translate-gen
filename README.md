@@ -49,7 +49,7 @@ value = "Bonjour le monde"
 const = "Name"
 value = "Mon nom est %s"
 
-[[translation.values]]
+[[translation.value]]
 const = "httpStuff.StatusNotFound"
 value = "Pas trouvé"
 ```
