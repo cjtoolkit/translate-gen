@@ -19,11 +19,11 @@ type Value struct {
 type Base struct {
 	Language  string  `toml:"language"`
 	CreateMap bool    `toml:"createMap"`
-	Values    []Value `toml:"values"`
+	Values    []Value `toml:"value"`
 }
 
 type Translation struct {
 	Language     string  `toml:"language"`
 	FunctionName string  `toml:"functionName"`
-	Values       []Value `toml:"values"`
+	Values       []Value `toml:"value"`
 }

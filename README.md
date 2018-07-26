@@ -22,11 +22,11 @@ base.toml
 language = "English"
 createMap = true # Optional
 
-[[base.values]]
+[[base.value]]
 const = "Hello"
 value = "Hello World"
 
-[[base.values]]
+[[base.value]]
 const = "Name"
 value = "My name is %s"
 ```
@@ -41,11 +41,11 @@ alias = "httpStuff" # Optional
 language = "French"
 functionName = "French"
 
-[[translation.values]]
+[[translation.value]]
 const = "Hello"
 value = "Bonjour le monde"
 
-[[translation.values]]
+[[translation.value]]
 const = "Name"
 value = "Mon nom est %s"
 

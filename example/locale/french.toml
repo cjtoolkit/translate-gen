@@ -6,14 +6,14 @@ alias = "httpStuff"
 language = "French"
 functionName = "French"
 
-[[translation.values]]
+[[translation.value]]
 const = "Hello"
 value = "Bonjour le monde"
 
-[[translation.values]]
+[[translation.value]]
 const = "Name"
 value = "Mon nom est %s"
 
-[[translation.values]]
+[[translation.value]]
 const = "httpStuff.StatusNotFound"
 value = "Pas trouvé"
