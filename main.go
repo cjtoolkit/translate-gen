@@ -5,9 +5,9 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/BurntSushi/toml"
 	"github.com/cjtoolkit/translate-gen/structure"
 	"github.com/cjtoolkit/translate-gen/template"
+	toml "github.com/pelletier/go-toml"
 )
 
 func checkErr(err error) {
@@ -30,7 +30,7 @@ func main() {
 		checkErr(err)
 
 		fileBase := structure.FileBase{}
-		_, err = toml.DecodeReader(file, &fileBase)
+		err = toml.NewDecoder(file).Decode(&fileBase)
 		checkErr(err)
 
 		bases = append(bases, template.Context{

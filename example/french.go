@@ -10,8 +10,8 @@ import (
 // French
 func French() map[interface{}]string {
 	return map[interface{}]string{
-		Hello: `Bonjour le monde`,
-		Name:  `Mon nom est %s`,
+		Hello:                    `Bonjour le monde`,
+		Name:                     `Mon nom est %s`,
 		httpStuff.StatusNotFound: `Pas trouvé`,
 	}
 }
