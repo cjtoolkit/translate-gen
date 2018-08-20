@@ -3,6 +3,7 @@ package main
 import (
 	"os"
 	"os/exec"
+	"path"
 	"strings"
 
 	"github.com/cjtoolkit/translate-gen/structure"
@@ -43,7 +44,7 @@ func main() {
 
 	aTemplate := template.BuildTemplate()
 	for _, base := range bases {
-		splitName := strings.Split(base.Source, ".")
+		splitName := strings.Split(path.Base(base.Source), ".")
 		name := strings.Join(splitName[:len(splitName)-1], ".") + ".go"
 
 		file, err := os.Create(name)

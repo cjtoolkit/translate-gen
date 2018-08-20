@@ -2,10 +2,10 @@
 language = "English"
 createMap = true
 
-[[base.values]]
+[[base.value]]
 const = "Hello"
 value = "Hello World"
 
-[[base.values]]
+[[base.value]]
 const = "Name"
 value = "My name is %s"

@@ -1,3 +1,3 @@
-//go:generate translate-gen example base.toml french.toml
+//go:generate translate-gen example locale/base.toml locale/french.toml
 
 package example
