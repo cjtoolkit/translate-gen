@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/cjtoolkit/translate-gen.svg?branch=master)](https://travis-ci.com/cjtoolkit/translate-gen)
+
 # Translate Gen
 
 A working prototype translation system that relies purely on constant variable,
