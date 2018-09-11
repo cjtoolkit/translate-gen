@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/cjtoolkit/translate-gen.svg?branch=master)](https://travis-ci.com/cjtoolkit/translate-gen)
+[![Build Status](https://travis-ci.org/cjtoolkit/translate-gen.svg?branch=master)](https://travis-ci.org/cjtoolkit/translate-gen)
 
 # Translate Gen
 
